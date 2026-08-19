@@ -1694,20 +1694,28 @@
   });
 
   /* ---------- INSTAGRAM BÖLÜMÜ (resmi embed.js) ---------- */
-  /* embed.js betiği profili otomatik yükler. Betik engellenir/başarısız olursa
-     (ör. reklam engelleyici, ağ hatası) belirli bir süre sonunda iframe oluşmamış
-     olur ve yerine şık, bağlantı veren bir yedek kart gösterilir. */
+  /* embed.js betiği profili otomatik yükler. Betik engellenir/başarısız olur ya da
+     iframe içeriği gerçekten görüntülenecek yüksekliğe ulaşamazsa (ör. reklam
+     engelleyici, ağ hatası, üçüncü taraf çerez kısıtlaması) belirli bir süre
+     sonunda yerine şık, bağlantı veren bir yedek kart gösterilir. */
   (function(){
     var wrap = document.getElementById('igEmbedWrap');
     var fallback = document.getElementById('igFallbackCard');
     if(!wrap || !fallback) return;
-    setTimeout(function(){
-      var loaded = wrap.querySelector('iframe');
-      if(!loaded){
+    function igOturduMu(){
+      var f = wrap.querySelector('iframe');
+      return !!f && f.offsetHeight > 80;
+    }
+    function igDenetle(deneme){
+      if(igOturduMu()) return; // başarıyla render oldu, dokunma
+      if(deneme >= 4){
         wrap.style.display = 'none';
         fallback.style.display = 'flex';
+        return;
       }
-    }, 4500);
+      setTimeout(function(){ igDenetle(deneme + 1); }, 1500);
+    }
+    setTimeout(function(){ igDenetle(0); }, 2000);
   })();
 </script>
 
