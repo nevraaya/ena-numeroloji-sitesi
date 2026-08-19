@@ -402,21 +402,7 @@
     display:flex;justify-content:center;
   }
   .ig-embed-wrap .instagram-media{margin:0 auto !important;width:100% !important;}
-  .ig-fallback-card{
-    display:flex;align-items:center;gap:16px;flex-wrap:wrap;justify-content:center;
-    max-width:420px;margin:0 auto;background:var(--card);border:1px solid var(--line);
-    border-radius:20px;padding:22px 26px;box-shadow:var(--shadow);text-align:left;
-  }
-  .ig-avatar-fallback{
-    flex:none;width:60px;height:60px;border-radius:50%;
-    display:flex;align-items:center;justify-content:center;
-    background:linear-gradient(135deg,var(--brand),var(--coral) 60%,var(--gold) 130%);
-    color:#fff;font-family:'Cinzel',serif;font-weight:700;font-size:1.15rem;
-  }
-  .ig-card-info{flex:1;min-width:160px;}
-  .ig-card-info .ig-username{display:block;font-weight:700;font-size:1.02rem;color:var(--ink);}
-  .ig-card-info .ig-sub{display:block;font-size:.84rem;color:var(--ink-soft);margin-top:2px;}
-  .ig-more-wrap{text-align:center;margin-top:28px;}
+  .ig-more-wrap{text-align:center;margin-top:18px;}
   .ig-more-btn{
     display:inline-flex;align-items:center;gap:10px;padding:15px 30px;border-radius:999px;
     font-weight:700;font-size:.95rem;text-decoration:none;color:#fff;
@@ -428,7 +414,6 @@
   .ig-more-btn svg{width:20px;height:20px;fill:#fff;flex:none;}
   @media(max-width:700px){
     .ig-embed-wrap{max-width:100%;}
-    .ig-fallback-card{padding:18px;}
   }
 
   /* CTA */
@@ -879,18 +864,17 @@
       <div class="ig-embed-wrap" id="igEmbedWrap">
         <blockquote
           class="instagram-media"
-          data-instgrm-permalink="https://www.instagram.com/nevrahaniminnumerolojisi338/?utm_source=ig_embed&utm_campaign=loading"
+          data-instgrm-permalink="https://www.instagram.com/reel/Db_W4qaE1sQ/?utm_source=ig_embed&utm_campaign=loading"
           data-instgrm-version="14">
         </blockquote>
       </div>
 
-      <!-- Instagram içeriği yüklenemezse (script engellenmiş/başarısız) gösterilecek şık yedek kart -->
-      <div class="ig-fallback-card" id="igFallbackCard" style="display:none;">
-        <div class="ig-avatar-fallback">NA</div>
-        <div class="ig-card-info">
-          <span class="ig-username">@nevrahaniminnumerolojisi338</span>
-          <span class="ig-sub">Türkiye Uluslararası Numeroloji Okulu</span>
-        </div>
+      <!-- Gönderi yüklenemezse (script engellenmiş/başarısız) gösterilecek tek bağlantı — büyük boş kutu/hata mesajı yok -->
+      <div class="ig-more-wrap" id="igPostFallback" style="display:none;">
+        <a class="ig-more-btn" href="https://www.instagram.com/reel/Db_W4qaE1sQ/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.58.01 4.85.07 1.17.05 1.97.24 2.43.4a4.9 4.9 0 0 1 1.77 1.15 4.9 4.9 0 0 1 1.15 1.77c.16.46.35 1.26.4 2.43.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.97-.4 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.46.16-1.26.35-2.43.4-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.97-.24-2.43-.4a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.16-.46-.35-1.26-.4-2.43C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.85c.05-1.17.24-1.97.4-2.43A4.9 4.9 0 0 1 3.82 3 4.9 4.9 0 0 1 5.6 1.85c.46-.16 1.26-.35 2.43-.4C9.3 1.39 9.68 1.38 12 1.38V2.2Zm0 1.98c-3.16 0-3.5.01-4.74.07-.96.04-1.48.2-1.83.34-.46.18-.79.39-1.13.73-.34.34-.55.67-.73 1.13-.14.35-.3.87-.34 1.83-.06 1.24-.07 1.58-.07 4.74s.01 3.5.07 4.74c.04.96.2 1.48.34 1.83.18.46.39.79.73 1.13.34.34.67.55 1.13.73.35.14.87.3 1.83.34 1.24.06 1.58.07 4.74.07s3.5-.01 4.74-.07c.96-.04 1.48-.2 1.83-.34.46-.18.79-.39 1.13-.73.34-.34.55-.67.73-1.13.14-.35.3-.87.34-1.83.06-1.24.07-1.58.07-4.74s-.01-3.5-.07-4.74c-.04-.96-.2-1.48-.34-1.83a3 3 0 0 0-.73-1.13 3 3 0 0 0-1.13-.73c-.35-.14-.87-.3-1.83-.34C15.5 4.19 15.16 4.18 12 4.18Zm0 3.37a4.45 4.45 0 1 1 0 8.9 4.45 4.45 0 0 1 0-8.9Zm0 1.98a2.47 2.47 0 1 0 0 4.94 2.47 2.47 0 0 0 0-4.94Zm4.66-2.2a1.04 1.04 0 1 1 0 2.08 1.04 1.04 0 0 1 0-2.08Z"/></svg>
+          Instagram'da Görüntüle
+        </a>
       </div>
 
       <div class="ig-more-wrap">
@@ -1693,24 +1677,24 @@
     }
   });
 
-  /* ---------- INSTAGRAM BÖLÜMÜ (resmi embed.js) ---------- */
-  /* embed.js betiği profili otomatik yükler. Betik engellenir/başarısız olur ya da
+  /* ---------- INSTAGRAM BÖLÜMÜ (resmi embed.js — tek gönderi) ---------- */
+  /* embed.js betiği gönderiyi otomatik yükler. Betik engellenir/başarısız olur ya da
      iframe içeriği gerçekten görüntülenecek yüksekliğe ulaşamazsa (ör. reklam
      engelleyici, ağ hatası, üçüncü taraf çerez kısıtlaması) belirli bir süre
-     sonunda yerine şık, bağlantı veren bir yedek kart gösterilir. */
+     sonunda büyük boş kutu yerine yalnızca "Instagram'da Görüntüle" bağlantısı gösterilir. */
   (function(){
     var wrap = document.getElementById('igEmbedWrap');
-    var fallback = document.getElementById('igFallbackCard');
+    var fallback = document.getElementById('igPostFallback');
     if(!wrap || !fallback) return;
     function igOturduMu(){
       var f = wrap.querySelector('iframe');
       return !!f && f.offsetHeight > 80;
     }
     function igDenetle(deneme){
-      if(igOturduMu()) return; // başarıyla render oldu, dokunma
+      if(igOturduMu()) return; // gönderi başarıyla render oldu, dokunma
       if(deneme >= 4){
         wrap.style.display = 'none';
-        fallback.style.display = 'flex';
+        fallback.style.display = 'block';
         return;
       }
       setTimeout(function(){ igDenetle(deneme + 1); }, 1500);
