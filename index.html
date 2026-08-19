@@ -396,44 +396,26 @@
   .gun-sembol-detay strong{color:var(--brand-text);}
   @media(max-width:480px){ .gun-sembol-btn{min-width:46px;height:46px;font-size:1rem;} }
 
-  /* INSTAGRAM */
-  .ig-card{
-    display:flex;align-items:center;gap:18px;flex-wrap:wrap;
-    background:var(--card);border:1px solid var(--line);border-radius:20px;
-    padding:20px 24px;box-shadow:var(--shadow);margin-bottom:28px;
+  /* INSTAGRAM (resmi embed.js) */
+  .ig-embed-wrap{
+    max-width:540px;min-width:280px;width:100%;margin:0 auto;
+    display:flex;justify-content:center;
   }
-  .ig-avatar-wrap{position:relative;flex:none;width:72px;height:72px;border-radius:50%;padding:3px;
-    background:linear-gradient(135deg,var(--gold),var(--coral) 55%,var(--brand) 100%);}
-  .ig-avatar{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block;border:3px solid var(--card);background:var(--paper-alt);}
+  .ig-embed-wrap .instagram-media{margin:0 auto !important;width:100% !important;}
+  .ig-fallback-card{
+    display:flex;align-items:center;gap:16px;flex-wrap:wrap;justify-content:center;
+    max-width:420px;margin:0 auto;background:var(--card);border:1px solid var(--line);
+    border-radius:20px;padding:22px 26px;box-shadow:var(--shadow);text-align:left;
+  }
   .ig-avatar-fallback{
-    width:100%;height:100%;border-radius:50%;border:3px solid var(--card);
+    flex:none;width:60px;height:60px;border-radius:50%;
     display:flex;align-items:center;justify-content:center;
     background:linear-gradient(135deg,var(--brand),var(--coral) 60%,var(--gold) 130%);
-    color:#fff;font-family:'Cinzel',serif;font-weight:700;font-size:1.3rem;
+    color:#fff;font-family:'Cinzel',serif;font-weight:700;font-size:1.15rem;
   }
-  .ig-card-info{flex:1;min-width:180px;}
-  .ig-card-info .ig-username{display:block;font-weight:700;font-size:1.05rem;color:var(--ink);}
+  .ig-card-info{flex:1;min-width:160px;}
+  .ig-card-info .ig-username{display:block;font-weight:700;font-size:1.02rem;color:var(--ink);}
   .ig-card-info .ig-sub{display:block;font-size:.84rem;color:var(--ink-soft);margin-top:2px;}
-  .ig-follow-btn{
-    display:inline-flex;align-items:center;gap:8px;padding:11px 22px;border-radius:999px;
-    font-weight:700;font-size:.9rem;text-decoration:none;color:#fff;flex:none;
-    background:linear-gradient(135deg,var(--brand),var(--coral) 55%,var(--gold) 130%);
-    box-shadow:0 10px 22px -10px rgba(123,79,166,.5);
-    transition:transform .25s cubic-bezier(.22,.9,.3,1), box-shadow .25s ease;
-  }
-  .ig-follow-btn:hover{transform:translateY(-2px);box-shadow:0 14px 26px -10px rgba(123,79,166,.6);}
-  .ig-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
-  .ig-post{
-    position:relative;display:block;aspect-ratio:1/1;border-radius:14px;overflow:hidden;
-    background:var(--paper-alt);box-shadow:var(--shadow);
-  }
-  .ig-post img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease;}
-  .ig-post:hover img{transform:scale(1.05);}
-  .ig-post-fallback{
-    position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
-    background:linear-gradient(135deg,var(--brand-soft),var(--gold-soft) 60%,var(--coral-soft) 130%);
-  }
-  .ig-post-fallback svg{width:34%;height:34%;max-width:44px;max-height:44px;opacity:.45;stroke:var(--brand);}
   .ig-more-wrap{text-align:center;margin-top:28px;}
   .ig-more-btn{
     display:inline-flex;align-items:center;gap:10px;padding:15px 30px;border-radius:999px;
@@ -445,8 +427,8 @@
   .ig-more-btn:hover{transform:translateY(-2px) scale(1.02);}
   .ig-more-btn svg{width:20px;height:20px;fill:#fff;flex:none;}
   @media(max-width:700px){
-    .ig-grid{grid-template-columns:repeat(2,1fr);gap:10px;}
-    .ig-card{padding:18px;}
+    .ig-embed-wrap{max-width:100%;}
+    .ig-fallback-card{padding:18px;}
   }
 
   /* CTA */
@@ -886,38 +868,40 @@
     </div>
   </section>
 
-  <!-- INSTAGRAM -->
+  <!-- INSTAGRAM (resmi Instagram embed.js gömme sistemi) -->
   <section id="instagram" class="alt">
-    <div class="wrap">
-      <div class="section-head">
+    <div class="wrap" style="text-align:center;">
+      <div class="section-head" style="margin-left:auto;margin-right:auto;text-align:center;">
         <span class="eyebrow">Sosyal Medya</span>
         <h2>Instagram'da Bizi Takip Edin</h2>
       </div>
 
-      <div class="ig-card">
-        <div class="ig-avatar-wrap">
-          <img class="ig-avatar" id="igAvatarImg" alt="Instagram profil fotoğrafı" loading="lazy">
-        </div>
-        <div class="ig-card-info">
-          <span class="ig-username" id="igUsername"></span>
-          <span class="ig-sub">Türkiye Uluslararası Numeroloji Okulu</span>
-        </div>
-        <a class="ig-follow-btn" id="igFollowBtn" href="#" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2.2c3.2 0 3.58.01 4.85.07 1.17.05 1.97.24 2.43.4a4.9 4.9 0 0 1 1.77 1.15 4.9 4.9 0 0 1 1.15 1.77c.16.46.35 1.26.4 2.43.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.97-.4 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.46.16-1.26.35-2.43.4-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.97-.24-2.43-.4a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.16-.46-.35-1.26-.4-2.43C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.85c.05-1.17.24-1.97.4-2.43A4.9 4.9 0 0 1 3.82 3 4.9 4.9 0 0 1 5.6 1.85c.46-.16 1.26-.35 2.43-.4C9.3 1.39 9.68 1.38 12 1.38V2.2Zm0 1.98c-3.16 0-3.5.01-4.74.07-.96.04-1.48.2-1.83.34-.46.18-.79.39-1.13.73-.34.34-.55.67-.73 1.13-.14.35-.3.87-.34 1.83-.06 1.24-.07 1.58-.07 4.74s.01 3.5.07 4.74c.04.96.2 1.48.34 1.83.18.46.39.79.73 1.13.34.34.67.55 1.13.73.35.14.87.3 1.83.34 1.24.06 1.58.07 4.74.07s3.5-.01 4.74-.07c.96-.04 1.48-.2 1.83-.34.46-.18.79-.39 1.13-.73.34-.34.55-.67.73-1.13.14-.35.3-.87.34-1.83.06-1.24.07-1.58.07-4.74s-.01-3.5-.07-4.74c-.04-.96-.2-1.48-.34-1.83a3 3 0 0 0-.73-1.13 3 3 0 0 0-1.13-.73c-.35-.14-.87-.3-1.83-.34C15.5 4.19 15.16 4.18 12 4.18Zm0 3.37a4.45 4.45 0 1 1 0 8.9 4.45 4.45 0 0 1 0-8.9Zm0 1.98a2.47 2.47 0 1 0 0 4.94 2.47 2.47 0 0 0 0-4.94Zm4.66-2.2a1.04 1.04 0 1 1 0 2.08 1.04 1.04 0 0 1 0-2.08Z"/></svg>
-          Takip Et
-        </a>
+      <div class="ig-embed-wrap" id="igEmbedWrap">
+        <blockquote
+          class="instagram-media"
+          data-instgrm-permalink="https://www.instagram.com/nevrahaniminnumerolojisi338/?utm_source=ig_embed&utm_campaign=loading"
+          data-instgrm-version="14">
+        </blockquote>
       </div>
 
-      <div class="ig-grid" id="igGrid"></div>
+      <!-- Instagram içeriği yüklenemezse (script engellenmiş/başarısız) gösterilecek şık yedek kart -->
+      <div class="ig-fallback-card" id="igFallbackCard" style="display:none;">
+        <div class="ig-avatar-fallback">NA</div>
+        <div class="ig-card-info">
+          <span class="ig-username">@nevrahaniminnumerolojisi338</span>
+          <span class="ig-sub">Türkiye Uluslararası Numeroloji Okulu</span>
+        </div>
+      </div>
 
       <div class="ig-more-wrap">
-        <a class="ig-more-btn" id="igMoreBtn" href="#" target="_blank" rel="noopener">
+        <a class="ig-more-btn" href="https://www.instagram.com/nevrahaniminnumerolojisi338/" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.58.01 4.85.07 1.17.05 1.97.24 2.43.4a4.9 4.9 0 0 1 1.77 1.15 4.9 4.9 0 0 1 1.15 1.77c.16.46.35 1.26.4 2.43.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.97-.4 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.46.16-1.26.35-2.43.4-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.97-.24-2.43-.4a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.16-.46-.35-1.26-.4-2.43C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.85c.05-1.17.24-1.97.4-2.43A4.9 4.9 0 0 1 3.82 3 4.9 4.9 0 0 1 5.6 1.85c.46-.16 1.26-.35 2.43-.4C9.3 1.39 9.68 1.38 12 1.38V2.2Zm0 1.98c-3.16 0-3.5.01-4.74.07-.96.04-1.48.2-1.83.34-.46.18-.79.39-1.13.73-.34.34-.55.67-.73 1.13-.14.35-.3.87-.34 1.83-.06 1.24-.07 1.58-.07 4.74s.01 3.5.07 4.74c.04.96.2 1.48.34 1.83.18.46.39.79.73 1.13.34.34.67.55 1.13.73.35.14.87.3 1.83.34 1.24.06 1.58.07 4.74.07s3.5-.01 4.74-.07c.96-.04 1.48-.2 1.83-.34.46-.18.79-.39 1.13-.73.34-.34.55-.67.73-1.13.14-.35.3-.87.34-1.83.06-1.24.07-1.58.07-4.74s-.01-3.5-.07-4.74c-.04-.96-.2-1.48-.34-1.83a3 3 0 0 0-.73-1.13 3 3 0 0 0-1.13-.73c-.35-.14-.87-.3-1.83-.34C15.5 4.19 15.16 4.18 12 4.18Zm0 3.37a4.45 4.45 0 1 1 0 8.9 4.45 4.45 0 0 1 0-8.9Zm0 1.98a2.47 2.47 0 1 0 0 4.94 2.47 2.47 0 0 0 0-4.94Zm4.66-2.2a1.04 1.04 0 1 1 0 2.08 1.04 1.04 0 0 1 0-2.08Z"/></svg>
-          Instagram'da Daha Fazlasını Gör
+          Instagram'da Takip Et
         </a>
       </div>
     </div>
   </section>
+  <script async src="https://www.instagram.com/embed.js"></script>
 
   <!-- CTA -->
   <section id="iletisim">
@@ -1709,74 +1693,22 @@
     }
   });
 
-  /* ---------- INSTAGRAM BÖLÜMÜ ---------- */
-  /* Hesap adını, profil bağlantısını, profil fotoğrafını ve gönderileri değiştirmek için
-     sadece aşağıdaki IG_CONFIG nesnesini güncelleyin. Görsel dosyaları bulunamazsa
-     (henüz eklenmediyse) otomatik olarak şık bir dekoratif kart gösterilir. */
-  const IG_CONFIG = {
-    username: '@nevrahaniminnumerolojisi338',
-    profileUrl: 'https://www.instagram.com/nevrahaniminnumerolojisi338/',
-    avatar: 'assets/instagram/avatar.jpg',
-    posts: [
-      { image: 'assets/instagram/post-1.jpg', url: 'https://www.instagram.com/nevrahaniminnumerolojisi338/' },
-      { image: 'assets/instagram/post-2.jpg', url: 'https://www.instagram.com/nevrahaniminnumerolojisi338/' },
-      { image: 'assets/instagram/post-3.jpg', url: 'https://www.instagram.com/nevrahaniminnumerolojisi338/' },
-      { image: 'assets/instagram/post-4.jpg', url: 'https://www.instagram.com/nevrahaniminnumerolojisi338/' },
-      { image: 'assets/instagram/post-5.jpg', url: 'https://www.instagram.com/nevrahaniminnumerolojisi338/' },
-      { image: 'assets/instagram/post-6.jpg', url: 'https://www.instagram.com/nevrahaniminnumerolojisi338/' }
-    ]
-  };
-
-  const igCameraSvg = '<svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="3" y="6" width="18" height="14" rx="3"/><circle cx="12" cy="13" r="4"/><path d="M8 6l1.2-2h5.6L16 6"/></svg>';
-
-  function igInit(){
-    const followBtn = document.getElementById('igFollowBtn');
-    const moreBtn = document.getElementById('igMoreBtn');
-    const usernameEl = document.getElementById('igUsername');
-    const avatarImg = document.getElementById('igAvatarImg');
-    const avatarWrap = document.querySelector('.ig-avatar-wrap');
-    const grid = document.getElementById('igGrid');
-    if(!grid) return;
-
-    usernameEl.textContent = IG_CONFIG.username;
-    followBtn.href = IG_CONFIG.profileUrl;
-    moreBtn.href = IG_CONFIG.profileUrl;
-
-    avatarImg.src = IG_CONFIG.avatar;
-    avatarImg.addEventListener('error', function(){
-      avatarImg.remove();
-      const fb = document.createElement('div');
-      fb.className = 'ig-avatar-fallback';
-      fb.textContent = 'NA';
-      avatarWrap.appendChild(fb);
-    }, { once:true });
-
-    grid.innerHTML = '';
-    IG_CONFIG.posts.forEach(function(post){
-      const a = document.createElement('a');
-      a.className = 'ig-post';
-      a.href = post.url || IG_CONFIG.profileUrl;
-      a.target = '_blank';
-      a.rel = 'noopener';
-      a.setAttribute('aria-label', 'Instagram gönderisini yeni sekmede aç');
-
-      const img = document.createElement('img');
-      img.src = post.image;
-      img.loading = 'lazy';
-      img.alt = 'Instagram gönderisi';
-      img.addEventListener('error', function(){
-        img.remove();
-        const fb = document.createElement('div');
-        fb.className = 'ig-post-fallback';
-        fb.innerHTML = igCameraSvg;
-        a.appendChild(fb);
-      }, { once:true });
-
-      a.appendChild(img);
-      grid.appendChild(a);
-    });
-  }
-  igInit();
+  /* ---------- INSTAGRAM BÖLÜMÜ (resmi embed.js) ---------- */
+  /* embed.js betiği profili otomatik yükler. Betik engellenir/başarısız olursa
+     (ör. reklam engelleyici, ağ hatası) belirli bir süre sonunda iframe oluşmamış
+     olur ve yerine şık, bağlantı veren bir yedek kart gösterilir. */
+  (function(){
+    var wrap = document.getElementById('igEmbedWrap');
+    var fallback = document.getElementById('igFallbackCard');
+    if(!wrap || !fallback) return;
+    setTimeout(function(){
+      var loaded = wrap.querySelector('iframe');
+      if(!loaded){
+        wrap.style.display = 'none';
+        fallback.style.display = 'flex';
+      }
+    }, 4500);
+  })();
 </script>
 
 </body>
