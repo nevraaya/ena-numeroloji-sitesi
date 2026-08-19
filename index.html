@@ -307,27 +307,31 @@
   .ha-adimlar summary{cursor:pointer;font-weight:600;color:var(--brand-text);font-size:.88rem;}
 
   /* COURSE TEASER CARDS */
-  .course-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;}
+  .course-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
   @media(max-width:760px){ .course-grid{grid-template-columns:1fr;} }
   .course-card{
-    position:relative;display:flex;align-items:stretch;min-height:172px;
+    position:relative;display:flex;align-items:stretch;min-height:300px;
     border-radius:22px;overflow:hidden;box-shadow:var(--shadow);
     background:linear-gradient(135deg,#F0CE8C,#E0AC5C 55%,#C88A3C);
     text-decoration:none;color:#3A2405;transition:transform .18s ease, box-shadow .18s ease;
   }
   .course-card:hover{transform:translateY(-3px);box-shadow:0 22px 44px -18px rgba(76,42,110,.35);}
   .course-card.featured{background:linear-gradient(135deg,#C9A6EA,#7B4FA6 60%,#4E2E73);color:#fff;}
-  .course-card .cc-text{flex:1;min-width:0;padding:22px 18px;display:flex;flex-direction:column;justify-content:center;gap:4px;z-index:1;}
-  .course-card .k{font-size:.68rem;text-transform:uppercase;letter-spacing:.07em;font-weight:700;opacity:.85;display:block;}
-  .course-card h4{font-family:'Playfair Display',serif;font-size:1.08rem;margin:2px 0 6px;color:inherit;line-height:1.25;}
-  .course-card p{font-size:.82rem;margin-bottom:10px;opacity:.92;line-height:1.4;}
-  .course-card .cc-link{display:inline-flex;align-items:center;gap:6px;font-size:.8rem;font-weight:700;background:rgba(58,36,5,.14);padding:8px 14px;border-radius:999px;width:fit-content;}
+  .course-card .cc-text{flex:1 1 60%;min-width:0;padding:28px 26px;display:flex;flex-direction:column;justify-content:center;gap:6px;z-index:1;}
+  .course-card .k{font-size:.7rem;text-transform:uppercase;letter-spacing:.07em;font-weight:700;opacity:.85;display:block;}
+  .course-card h4{font-family:'Playfair Display',serif;font-size:1.2rem;margin:2px 0 8px;color:inherit;line-height:1.25;}
+  .course-card p{font-size:.87rem;margin-bottom:14px;opacity:.92;line-height:1.5;}
+  .course-card .cc-link{display:inline-flex;align-items:center;gap:6px;font-size:.82rem;font-weight:700;background:rgba(58,36,5,.14);padding:9px 16px;border-radius:999px;width:fit-content;}
   .course-card.featured .cc-link{background:rgba(255,255,255,.2);}
-  .course-card .cc-photo{width:112px;flex:none;position:relative;}
-  .course-card .cc-photo img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;}
-  .course-card .cc-photo::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(200,138,60,.9),rgba(200,138,60,0) 55%);}
-  .course-card.featured .cc-photo::before{background:linear-gradient(90deg,rgba(78,46,115,.9),rgba(78,46,115,0) 55%);}
-  @media(max-width:420px){ .course-card{min-height:150px;} .course-card .cc-photo{width:88px;} }
+  .course-card .cc-photo{flex:0 0 40%;width:40%;position:relative;overflow:hidden;background:#00000014;border-left:1px solid rgba(58,36,5,.12);}
+  .course-card.featured .cc-photo{border-left-color:rgba(255,255,255,.18);}
+  .course-card .cc-photo img{width:100%;height:100%;object-fit:cover;object-position:center 12%;display:block;}
+  @media(max-width:760px){
+    .course-card{flex-direction:column;min-height:0;}
+    .course-card .cc-photo{width:100%;flex:none;aspect-ratio:16/10;border-left:none;border-bottom:1px solid rgba(58,36,5,.12);order:-1;}
+    .course-card.featured .cc-photo{border-bottom-color:rgba(255,255,255,.18);}
+    .course-card .cc-text{padding:22px 22px 24px;}
+  }
 
   /* NUMBERS/LETTERS DECOR STRIP */
   .decor-strip{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin:0 0 8px;}
@@ -593,7 +597,7 @@
             <p>9 sayı yaklaşımı yerine 22 arketip ile genişletilmiş numeroloji okuması; 13 çakra sistemi, şifa sayısı, kader…</p>
             <span class="cc-link">Eğitimi İncele →</span>
           </div>
-          <div class="cc-photo"><img src="assets/egitmenler/nevra-22lik.jpg" alt="Emine Nevra Aya"></div>
+          <div class="cc-photo"><img src="assets/egitmenler/nevra-22lik.jpg" alt="Emine Nevra Aya" style="object-position:center 12%;"></div>
         </a>
         <a class="course-card" href="egitimler/pisagor-karesi/">
           <div class="cc-text">
@@ -602,7 +606,7 @@
             <p>Çin numerolojisi temelli kare sistemiyle karakter ve potansiyel analizi; güçlü/zayıf yönler, meslek yönelimi…</p>
             <span class="cc-link">Eğitimi İncele →</span>
           </div>
-          <div class="cc-photo"><img src="assets/egitmenler/nevra-pisagor.jpg" alt="Emine Nevra Aya"></div>
+          <div class="cc-photo"><img src="assets/egitmenler/nevra-pisagor.jpg" alt="Emine Nevra Aya" style="object-position:center 18%;"></div>
         </a>
         <a class="course-card" href="egitimler/kader-matrisi-ladini-metodu/">
           <div class="cc-text">
@@ -611,7 +615,7 @@
             <p>Evrenin 22 kod enerjisine dayanan, doğum tarihinden yola çıkarak yaşam potansiyeli, karmik dersler ve ruhsal…</p>
             <span class="cc-link">Eğitimi İncele →</span>
           </div>
-          <div class="cc-photo"><img src="assets/egitmenler/natalia-km.jpg" alt="Natalia Ladini"></div>
+          <div class="cc-photo"><img src="assets/egitmenler/natalia-km.jpg" alt="Natalia Ladini" style="object-position:85% 15%;"></div>
         </a>
         <a class="course-card" href="egitimler/7-kusak-soy-sifasi/">
           <div class="cc-text">
@@ -620,7 +624,7 @@
             <p>7 kuşak soy hattı şifası, atasal travma ve güç potansiyellerinin açığa çıkarılması; soy programları ve kuşak…</p>
             <span class="cc-link">Eğitimi İncele →</span>
           </div>
-          <div class="cc-photo"><img src="assets/egitmenler/natalia-7soy.jpg" alt="Natalia Ladini"></div>
+          <div class="cc-photo"><img src="assets/egitmenler/natalia-7soy.jpg" alt="Natalia Ladini" style="object-position:80% 15%;"></div>
         </a>
         <a class="course-card" href="egitimler/hayatin-matematigi/">
           <div class="cc-text">
@@ -629,7 +633,7 @@
             <p>Matriks, arketipler, ilişki/sinerji ve zaman analizini bir araya getiren 4 modüllü, sertifikasyon sınavlı…</p>
             <span class="cc-link">Eğitimi İncele →</span>
           </div>
-          <div class="cc-photo"><img src="assets/egitmenler/sibel-arda.jpg" alt="Dr. Sibel Arda"></div>
+          <div class="cc-photo"><img src="assets/egitmenler/sibel-arda.jpg" alt="Dr. Sibel Arda" style="object-position:center 15%;"></div>
         </a>
         <a class="course-card" href="egitimler/karmik-numeroloji/">
           <div class="cc-text">
@@ -638,7 +642,7 @@
             <p>Anael Karmik Numeroloji hesaplama sistemi ile arkanaların ve arketiplerin özel anlamları, karmik görevler,…</p>
             <span class="cc-link">Eğitimi İncele →</span>
           </div>
-          <div class="cc-photo"><img src="assets/egitmenler/mariyana-anael.jpg" alt="Mariyana Anael"></div>
+          <div class="cc-photo"><img src="assets/egitmenler/mariyana-anael.jpg" alt="Mariyana Anael" style="object-position:center 6%;"></div>
         </a>
         <a class="course-card" href="egitimler/kozmik-enerji/">
           <div class="cc-text">
@@ -647,7 +651,7 @@
             <p>Aura, çakra ve yaşam enerjisi akış kanalları sistemleri; inisiyasyon süreci ve üç temel kanal aktivasyonuyla…</p>
             <span class="cc-link">Eğitimi İncele →</span>
           </div>
-          <div class="cc-photo"><img src="assets/egitmenler/gorkem-can.jpg" alt="Görkem Can"></div>
+          <div class="cc-photo"><img src="assets/egitmenler/gorkem-can.jpg" alt="Görkem Can" style="object-position:center 22%;"></div>
         </a>
         <a class="course-card" href="egitimler/numeroloji-icin-astroloji/">
           <div class="cc-text">
@@ -656,7 +660,7 @@
             <p>Astrolojinin temel bilgilerini öğrenirken numeroloji analizlerine nasıl entegre edileceğini adım adım…</p>
             <span class="cc-link">Eğitimi İncele →</span>
           </div>
-          <div class="cc-photo"><img src="assets/egitmenler/figen-astroloji.jpg" alt="Figen Leylan Çabuk"></div>
+          <div class="cc-photo"><img src="assets/egitmenler/figen-astroloji.jpg" alt="Figen Leylan Çabuk" style="object-position:40% 22%;"></div>
         </a>
         <a class="course-card" href="egitimler/numji/">
           <div class="cc-text">
@@ -665,7 +669,7 @@
             <p>Numerolojik omurga, kader çizgisi, çakra numerolojisi ve karmik geçiş yollarını Numji dijital analiz…</p>
             <span class="cc-link">Eğitimi İncele →</span>
           </div>
-          <div class="cc-photo"><img src="assets/egitmenler/alper-kizilgil.jpg" alt="Mustafa Alper Kızılgil"></div>
+          <div class="cc-photo"><img src="assets/egitmenler/alper-kizilgil.jpg" alt="Mustafa Alper Kızılgil" style="object-position:center 10%;"></div>
         </a>
         <a class="course-card" href="egitimler/pentagram-numerolojisi/">
           <div class="cc-text">
@@ -674,7 +678,7 @@
             <p>Doğum tarihi ve sayı frekansı analizi, pentagram çizimi, çekirdek ve gölge pentagram yorumlamasıyla kişinin…</p>
             <span class="cc-link">Eğitimi İncele →</span>
           </div>
-          <div class="cc-photo"><img src="assets/egitmenler/niels-pilaar.jpg" alt="Niels Pilaar"></div>
+          <div class="cc-photo"><img src="assets/egitmenler/niels-pilaar.jpg" alt="Niels Pilaar" style="object-position:center 28%;"></div>
         </a>
         <a class="course-card" href="egitimler/iliski-analizi/">
           <div class="cc-text">
@@ -683,7 +687,7 @@
             <p>Sinastri (iki kişi arasındaki ilişki uyumu) analizinin temel prensipleri; çakra dökümü üzerinden ilişki…</p>
             <span class="cc-link">Eğitimi İncele →</span>
           </div>
-          <div class="cc-photo"><img src="assets/egitmenler/figen-iliski.jpg" alt="Figen Leylan Toaç"></div>
+          <div class="cc-photo"><img src="assets/egitmenler/figen-iliski.jpg" alt="Figen Leylan Toaç" style="object-position:40% 22%;"></div>
         </a>
         <a class="course-card" href="egitimler/ruya-ve-numeroloji/">
           <div class="cc-text">
@@ -692,7 +696,7 @@
             <p>Rüya bilgeliği, bilinçaltı ve arketipler; numeroloji haritasının çıkarılması ve rüyaların harita üzerinden…</p>
             <span class="cc-link">Eğitimi İncele →</span>
           </div>
-          <div class="cc-photo"><img src="assets/egitmenler/derya-degerli.jpg" alt="Servet Derya Değerli"></div>
+          <div class="cc-photo"><img src="assets/egitmenler/derya-degerli.jpg" alt="Servet Derya Değerli" style="object-position:center 18%;"></div>
         </a>
         <a class="course-card" href="egitimler/tarot-arketipleri/">
           <div class="cc-text">
@@ -701,7 +705,7 @@
             <p>Büyük Arkana'yı sembolik dil, Jung arketip kuramı, mitoloji, astroloji, Kabala, simya ve numerolojik kodlar…</p>
             <span class="cc-link">Eğitimi İncele →</span>
           </div>
-          <div class="cc-photo"><img src="assets/egitmenler/figen-tarot.jpg" alt="Figen Leylan Toaç"></div>
+          <div class="cc-photo"><img src="assets/egitmenler/figen-tarot.jpg" alt="Figen Leylan Toaç" style="object-position:40% 22%;"></div>
         </a>
         <a class="course-card" href="egitimler/yoga-ve-numeroloji-ile-cakralar/">
           <div class="cc-text">
@@ -710,7 +714,7 @@
             <p>Çakraları yaşam deneyimleri üzerinden yogik yaklaşımla, hangi çakranın hangi sayıyla rezonans kurduğunu…</p>
             <span class="cc-link">Eğitimi İncele →</span>
           </div>
-          <div class="cc-photo"><img src="assets/egitmenler/seda-ozkan.jpg" alt="Seda İris Özkan"></div>
+          <div class="cc-photo"><img src="assets/egitmenler/seda-ozkan.jpg" alt="Seda İris Özkan" style="object-position:center 10%;"></div>
         </a>
       </div>
       <p style="margin-top:28px;"><a class="btn btn-ghost" href="#iletisim">Tüm eğitimler ve detaylı bilgi için bize ulaşın →</a></p>
