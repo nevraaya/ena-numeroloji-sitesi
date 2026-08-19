@@ -1,0 +1,184 @@
+WEB İÇERİK KILAVUZU
+İsim Analizi
+Kısa harf anlamları, görsel yerleşim ve uygulama promptu
+Türkçe alfabe + Q, W, X • Yalnızca harf anlamları
+1. Web Sayfası İçin Kısa Harf Yorumları
+Bu metinler, isimdeki harfleri ayrı ayrı göstermek veya uygulamanın kişiye özel kısa yorum üretirken kullanacağı veri kaynağı olmak üzere sadeleştirilmiştir.
+A Harfi
+Başlatan, harekete geçen ve liderlik eden bir enerjiniz var. Bağımsız, kararlı ve özgüvenlisiniz; gücünüzü baskıya dönüştürmeden adil ve dengeli kullanmanız önemlidir.
+B Harfi
+Sezgisel, koruyucu ve besleyici bir yapınız var. Sevdiklerinize güvenli alan kurarsınız; başkalarını düşünürken kendi ihtiyaçlarınızı unutmamaya ve sınır koymaya dikkat etmelisiniz.
+C Harfi
+İletişim, anlatım ve ikna gücünüz yüksek. Konuşma, yazma ve sunum alanlarında parlayabilirsiniz; sözlerinizi ölçülü ve yapıcı kullanmanız sizi daha etkili kılar.
+Ç Harfi
+Hareketli, cesur ve keşfe açık bir enerjiniz var. Seyahat ve yenilik sizi besler; dürtüsel tepkileri ve ölçüsüz harcamayı bilinçli harekete dönüştürmeniz gerekir.
+D Harfi
+Doğuştan gelen belirgin yetenekleriniz ve dayanıklılığınız var. Hayat sizi emek vermeye zorlayabilir; potansiyelinizi fark edip disiplinle görünür hâle getirdiğinizde güçlenirsiniz.
+E Harfi
+Meraklı, özgür, iletişimci ve yüksek enerjilisiniz. Geleceği planlama gücünüz yüksektir; fazla düşünmek yerine anda kalıp fikirlerinizi uygulamaya geçirmeniz önemlidir.
+F Harfi
+Sorumluluk sahibi, güvenilir ve fayda üretmeye yatkınsınız. Aile, ekip ve hizmet alanlarında güçlüsünüz; kendinizi feda etmeden sağlıklı sınırlar kurmanız gerekir.
+G Harfi
+Sosyal görünümünüzün altında derin, seçici ve araştırmacı bir dünya var. Sezgileriniz güçlüdür; şüpheyi azaltıp gizli yeteneklerinizi güvenle ortaya koymanız gerekir.
+Ğ Harfi
+Bir alanda derinleşme, süreklilik ve uzmanlaşma potansiyeliniz var. Yönünüzü erken netleştirmeniz, sık değişim ve kararsızlık yerine kalıcı başarı getirir.
+H Harfi
+Başarı, statü, para ve yönetim enerjiniz güçlü. Kaynakları büyütebilir ve karşıtları birleştirebilirsiniz; alma-verme dengesini koruyup gücü paylaşmanız önemlidir.
+I Harfi
+Şifa, hizmet ve pratik çözüm üretme eğiliminiz yüksek. İnsanların yükünü hafifletebilirsiniz; herkesi iyileştirmeye çalışırken bedeninizi, zamanınızı ve sınırlarınızı korumalısınız.
+İ Harfi
+Hassas, sezgisel, zarif ve yaratıcı bir yapınız var. Şifa, sanat ve estetik alanlarında güçlü olabilirsiniz; kırılganlığınızı yaratıcı üretime dönüştürmeniz gerekir.
+J Harfi
+Vizyoner, kararlı ve yüksek hedeflere açık bir enerjiniz var. Güçlü hafızanız ve stratejik zekânız destekleyicidir; geçmişi bırakıp egoyu dengede tutmanız önemlidir.
+K Harfi
+Kariyer, yükselme ve liderlik potansiyeliniz güçlü. İnsanları toparlayıp yönlendirebilirsiniz; kontrol etmek yerine kapsayıcı ve bilinçli liderlik kurmanız gerekir.
+L Harfi
+Yetenekli, çekici, sosyal ve estetik duyarlılığı yüksek bir yapınız var. Sanatsal potansiyelinizi konfor alanında bekletmeden disiplinle görünür kılmanız önemlidir.
+M Harfi
+Çalışkan, pratik ve maddi güvenlik oluşturmaya yatkınsınız. Para ve kaynak yönetiminde güçlüsünüz; güven ihtiyacını kontrolcülüğe dönüştürmeden esnek kalmalısınız.
+N Harfi
+Empatik, koruyucu, verici ve anaç bir enerjiniz var. İnsanları kolay anlarsınız; başkalarının sorumluluklarını yüklenmeden özgürlük ve hizmet arasında denge kurmalısınız.
+O Harfi
+Ticaret, para, otorite ve kaynak büyütme potansiyeliniz yüksek. Sahiplenici ve güçlü olabilirsiniz; kontrolü bırakmayı, duyguları ifade etmeyi ve paylaşmayı öğrenmeniz gerekir.
+Ö Harfi
+Gizemli, gözlemci, sabırlı ve derin düşünen bir yapınız var. Zengin iç dünyanızı suskunluk ve inada dönüştürmeden açıkça ifade etmeniz önemlidir.
+P Harfi
+Analitik, stratejik, ilhamlı ve öğretici bir zihniniz var. Bilgiyi sistemleştirip aktarabilirsiniz; düşünceleri büyütmek yerine somut projelere dönüştürmeniz gerekir.
+Q Harfi
+Ticaret, statü, organizasyon ve maddi büyüme enerjiniz güçlü. Yoğun çalışma sizi başarıya taşıyabilir; para ve kontrolü etik, denge ve yaşam kalitesiyle birleştirmelisiniz.
+R Harfi
+Cesur, saygın, koruyucu ve krizlerde liderlik edebilen bir yapınız var. Gücünüzü şifa için kullanabilir; kararsızlık ve sertlik yerine net seçimler yapmalısınız.
+S Harfi
+Yaratıcı, girişimci, iletişimci ve görünür olmaya yatkınsınız. Para ve insan ilişkilerinde güçlüsünüz; başarıyı sevgiyle dengeleyip geçmişi bırakmanız gerekir.
+Ş Harfi
+Yoğun, cesur, hareketli ve yaratıcı bir enerjiniz var. Duygularınızı hızla eyleme dönüştürürsünüz; dürtüsel öfkeyi bilinçli harekete ve üretime yönlendirmelisiniz.
+T Harfi
+Bilge, gözlemci, birleştirici ve kültürel birikimi yüksek bir yapınız var. Bilgiyi içinizde tutmak yerine paylaşmanız ve kontrolü sezgisel güvenle dengelemeniz gerekir.
+U Harfi
+Para, bilgi, duygu ve deneyim biriktirme kapasiteniz güçlü. Kaynakları iyi korursunuz; kırgınlıkları içinizde tutmadan biriktirdiklerinizi sağlıklı biçimde dolaşıma sokmalısınız.
+Ü Harfi
+Yaratıcı, üretken ve zengin hayal gücüne sahip bir zihniniz var. Eleştiriye hassas olabilirsiniz; fazla düşünmeyi somut projelere, sanata ve üretime dönüştürmelisiniz.
+V Harfi
+Büyük hedefler, güçlü projeler ve dönüşüm yaratma potansiyeliniz var. Yüksek enerjinizi disiplin ve sorumlulukla yapılandırdığınızda kalıcı başarı elde edebilirsiniz.
+W Harfi
+Değişim, yüksek bilinç ve büyük etki oluşturma enerjiniz güçlü. Yoğun potansiyelinizi dağılma ve umursamazlık yerine bilinçli dönüşüm ve kalıcı üretime yönlendirmelisiniz.
+X Harfi
+Sıra dışı, keşfedilmemiş ve öngörülmesi zor bir potansiyel taşıyorsunuz. Bilinmeyeni korku ya da dağınıklık yerine araştırma, yenilik ve özgün üretim alanına çevirmelisiniz.
+Y Harfi
+Ruhsal, sezgisel, araştırmacı ve özgürlüğüne düşkün bir yapınız var. Farklı bilgileri sentezleyebilirsiniz; geçmişte kalmadan bilgeliğinizi bugünün eylemine dönüştürmelisiniz.
+Z Harfi
+Zeki, disiplinli, akademik ve zirveye çıkmaya odaklısınız. Yönetim ve ara buluculukta güçlüsünüz; seçimlerinizin sonuçlarını bilinçle taşıyıp sağlam düzen kurmanız gerekir.
+2. Web Sayfasında Gösterim Örneği
+Kullanıcı “BAŞAK” yazdığında isim ortada büyük harflerle gösterilir. Her harften bir ok çıkar ve okun ucunda kısa anlamı yer alır:
+B  →  Sezgisel, koruyucu ve besleyici
+A  →  Bağımsız, kararlı ve lider
+Ş  →  Cesur, hareketli ve yaratıcı
+A  →  Bağımsızlık ve liderlik etkisi güçlenir
+K  →  Kariyer odaklı, mücadeleci ve yönlendirici
+İsmin Toplu Yorumu
+Başak ismi; sezgisel, koruyucu, bağımsız ve güçlü bir karakter enerjisi taşır. İsminizde iki kez bulunan A harfi liderlik, kararlılık ve kendi yolunuzu çizme isteğini güçlendirir. Ş harfi cesaret ve hareket katarken, K harfi hedeflerinize odaklanma ve insanları yönlendirme becerinizi destekler. Zaman zaman kontrolcü veya fazla ısrarcı olmamaya dikkat etmeniz gerekebilir. Gücünüzü sezgilerinizle birleştirdiğinizde çevrenize güven veren etkili bir yol gösterici olabilirsiniz.
+Not: Bu sistemde hiçbir harf sayıya çevrilmez; toplama, indirgeme veya isim sayısı hesaplaması yapılmaz.
+3. Web Uygulaması İçin Hazır Prompt
+Aşağıdaki kurallarla Türkçe bir “Harflerle İsim Analizi” modülü oluştur.
+Amaç
+Kullanıcı adını yazdığında ismi harflerine ayır. Her harften dışarı doğru bir ok/bağlantı çizgisi çıkar ve o harfin kısa anlamını göster. Ardından yalnızca isimde bulunan harflerin anlamlarını birleştirerek kişiye özel, kısa ve akıcı bir toplu isim yorumu oluştur.
+ÖNEMLİ SINIR
+Bu çalışma yalnızca harflerin sembolik anlamlarına dayanır. Harfleri sayıya çevirme; toplama, çıkarma, indirgeme veya isim sayısı bulma. Ekranda hiçbir sayısal sonuç gösterme.
+Gi̇rdi̇ Temi̇zleme
+1. Girilen metnin başındaki/sonundaki boşlukları kaldır.
+2. Türkçe büyük harf dönüşümünü doğru uygula: i→İ, ı→I, ş→Ş, ğ→Ğ, ü→Ü, ö→Ö, ç→Ç.
+3. Boşluk, tire ve kesme işaretlerini görsel ayrım olarak koruyabilirsin; fakat bunlar için yorum üretme. Rakamları ve diğer sembolleri yok say.
+4. En az bir geçerli harf yoksa “Lütfen geçerli bir isim yazın.” uyarısı ver.
+GÖRSEL YERLEŞİM
+1. Girilen ismi büyük ve belirgin biçimde ekranın ortasına yerleştir.
+2. İsmin her harfinden ince bir ok veya bağlantı çizgisi çıkar.
+3. Okun ucunda harfi ve o harfin 4–8 kelimelik kısa özelliğini göster. Örnek: “B — Sezgisel, koruyucu ve besleyici.”
+4. Açıklamaları ismin çevresine dengeli dağıt; mobilde üst üste kartlar hâlinde göster. Çizgilerin birbirinin ve metinlerin üzerinden geçmemesine dikkat et.
+5. Aynı harf tekrar ediyorsa her harften ayrı ok çıkar. Açıklama aynı olabilir; ikinci ve sonraki tekrarlarda küçük bir “Bu özellik isminizde güçleniyor” notu eklenebilir.
+6. Masaüstünde isim merkezde, açıklamalar dönüşümlü olarak sağda ve solda yer alsın. Mobilde isim üstte, harf açıklamaları aşağıda harf sırasına göre dizilsin.
+TOPLU YORUMLAMA
+1. Yalnızca girilen isimde bulunan harflerin aşağıdaki anlamlarını kullan.
+2. İlk harfin temasını yoruma güçlü bir giriş olarak yansıt. Tekrarlanan harflerin özelliklerini daha belirgin kabul et. Son harfin temasını tamamlayıcı etki olarak kullan.
+3. Harf yorumlarını birebir arka arkaya yapıştırma. Ortak temaları birleştirerek doğal, tutarlı ve kişiye özel tek bir metin yaz.
+4. Metin 60–100 kelime arasında, 4–5 kısa cümle olsun.
+5. “[İsim] ismi…” veya “[İsim], isminizde…” diye başla. Samimi biçimde “siz” diye hitap et.
+6. Önce güçlü özellikleri anlat; ardından yalnızca bir denge/gelişim alanı ver; son cümleyi destekleyici biçimde tamamla.
+7. Kesin hüküm, korkutucu kehanet, hastalık tanısı, ölüm, kayıp, aldatılma veya iflas iddiası kullanma. “Olabilirsiniz”, “eğilim gösterebilirsiniz”, “dengelemek size iyi gelebilir” gibi olasılık dili kullan.
+8. Aynı harflerin farklı isimlerde aynı kalıp cümlelerle görünmemesi için sözdizimini çeşitlendir; ancak anlamı değiştirme.
+Çikti Bi̇çi̇mi̇
+Başlık: “İsminizin Harf Analizi”
+Görsel alan: Ortada isim; her harften çıkan okların ucunda kısa harf anlamları.
+Alt başlık: “İsminizin Toplu Yorumu”
+Yorum: Tek paragraf, 60–100 kelime.
+En altta küçük puntoda: “Bu yorum, isminizdeki harflerin sembolik anlamlarına dayalı kişisel farkındalık içeriğidir.”
+Harf Yorumlari Veri̇ Kaynaği
+Uygulamada her harf için aşağıdaki kısa anlamları kullan:
+A: 
+Başlatan, harekete geçen ve liderlik eden bir enerjiniz var. Bağımsız, kararlı ve özgüvenlisiniz; gücünüzü baskıya dönüştürmeden adil ve dengeli kullanmanız önemlidir.
+B: 
+Sezgisel, koruyucu ve besleyici bir yapınız var. Sevdiklerinize güvenli alan kurarsınız; başkalarını düşünürken kendi ihtiyaçlarınızı unutmamaya ve sınır koymaya dikkat etmelisiniz.
+C: 
+İletişim, anlatım ve ikna gücünüz yüksek. Konuşma, yazma ve sunum alanlarında parlayabilirsiniz; sözlerinizi ölçülü ve yapıcı kullanmanız sizi daha etkili kılar.
+Ç: 
+Hareketli, cesur ve keşfe açık bir enerjiniz var. Seyahat ve yenilik sizi besler; dürtüsel tepkileri ve ölçüsüz harcamayı bilinçli harekete dönüştürmeniz gerekir.
+D: 
+Doğuştan gelen belirgin yetenekleriniz ve dayanıklılığınız var. Hayat sizi emek vermeye zorlayabilir; potansiyelinizi fark edip disiplinle görünür hâle getirdiğinizde güçlenirsiniz.
+E: 
+Meraklı, özgür, iletişimci ve yüksek enerjilisiniz. Geleceği planlama gücünüz yüksektir; fazla düşünmek yerine anda kalıp fikirlerinizi uygulamaya geçirmeniz önemlidir.
+F: 
+Sorumluluk sahibi, güvenilir ve fayda üretmeye yatkınsınız. Aile, ekip ve hizmet alanlarında güçlüsünüz; kendinizi feda etmeden sağlıklı sınırlar kurmanız gerekir.
+G: 
+Sosyal görünümünüzün altında derin, seçici ve araştırmacı bir dünya var. Sezgileriniz güçlüdür; şüpheyi azaltıp gizli yeteneklerinizi güvenle ortaya koymanız gerekir.
+Ğ: 
+Bir alanda derinleşme, süreklilik ve uzmanlaşma potansiyeliniz var. Yönünüzü erken netleştirmeniz, sık değişim ve kararsızlık yerine kalıcı başarı getirir.
+H: 
+Başarı, statü, para ve yönetim enerjiniz güçlü. Kaynakları büyütebilir ve karşıtları birleştirebilirsiniz; alma-verme dengesini koruyup gücü paylaşmanız önemlidir.
+I: 
+Şifa, hizmet ve pratik çözüm üretme eğiliminiz yüksek. İnsanların yükünü hafifletebilirsiniz; herkesi iyileştirmeye çalışırken bedeninizi, zamanınızı ve sınırlarınızı korumalısınız.
+İ: 
+Hassas, sezgisel, zarif ve yaratıcı bir yapınız var. Şifa, sanat ve estetik alanlarında güçlü olabilirsiniz; kırılganlığınızı yaratıcı üretime dönüştürmeniz gerekir.
+J: 
+Vizyoner, kararlı ve yüksek hedeflere açık bir enerjiniz var. Güçlü hafızanız ve stratejik zekânız destekleyicidir; geçmişi bırakıp egoyu dengede tutmanız önemlidir.
+K: 
+Kariyer, yükselme ve liderlik potansiyeliniz güçlü. İnsanları toparlayıp yönlendirebilirsiniz; kontrol etmek yerine kapsayıcı ve bilinçli liderlik kurmanız gerekir.
+L: 
+Yetenekli, çekici, sosyal ve estetik duyarlılığı yüksek bir yapınız var. Sanatsal potansiyelinizi konfor alanında bekletmeden disiplinle görünür kılmanız önemlidir.
+M: 
+Çalışkan, pratik ve maddi güvenlik oluşturmaya yatkınsınız. Para ve kaynak yönetiminde güçlüsünüz; güven ihtiyacını kontrolcülüğe dönüştürmeden esnek kalmalısınız.
+N: 
+Empatik, koruyucu, verici ve anaç bir enerjiniz var. İnsanları kolay anlarsınız; başkalarının sorumluluklarını yüklenmeden özgürlük ve hizmet arasında denge kurmalısınız.
+O: 
+Ticaret, para, otorite ve kaynak büyütme potansiyeliniz yüksek. Sahiplenici ve güçlü olabilirsiniz; kontrolü bırakmayı, duyguları ifade etmeyi ve paylaşmayı öğrenmeniz gerekir.
+Ö: 
+Gizemli, gözlemci, sabırlı ve derin düşünen bir yapınız var. Zengin iç dünyanızı suskunluk ve inada dönüştürmeden açıkça ifade etmeniz önemlidir.
+P: 
+Analitik, stratejik, ilhamlı ve öğretici bir zihniniz var. Bilgiyi sistemleştirip aktarabilirsiniz; düşünceleri büyütmek yerine somut projelere dönüştürmeniz gerekir.
+Q: 
+Ticaret, statü, organizasyon ve maddi büyüme enerjiniz güçlü. Yoğun çalışma sizi başarıya taşıyabilir; para ve kontrolü etik, denge ve yaşam kalitesiyle birleştirmelisiniz.
+R: 
+Cesur, saygın, koruyucu ve krizlerde liderlik edebilen bir yapınız var. Gücünüzü şifa için kullanabilir; kararsızlık ve sertlik yerine net seçimler yapmalısınız.
+S: 
+Yaratıcı, girişimci, iletişimci ve görünür olmaya yatkınsınız. Para ve insan ilişkilerinde güçlüsünüz; başarıyı sevgiyle dengeleyip geçmişi bırakmanız gerekir.
+Ş: 
+Yoğun, cesur, hareketli ve yaratıcı bir enerjiniz var. Duygularınızı hızla eyleme dönüştürürsünüz; dürtüsel öfkeyi bilinçli harekete ve üretime yönlendirmelisiniz.
+T: 
+Bilge, gözlemci, birleştirici ve kültürel birikimi yüksek bir yapınız var. Bilgiyi içinizde tutmak yerine paylaşmanız ve kontrolü sezgisel güvenle dengelemeniz gerekir.
+U: 
+Para, bilgi, duygu ve deneyim biriktirme kapasiteniz güçlü. Kaynakları iyi korursunuz; kırgınlıkları içinizde tutmadan biriktirdiklerinizi sağlıklı biçimde dolaşıma sokmalısınız.
+Ü: 
+Yaratıcı, üretken ve zengin hayal gücüne sahip bir zihniniz var. Eleştiriye hassas olabilirsiniz; fazla düşünmeyi somut projelere, sanata ve üretime dönüştürmelisiniz.
+V: 
+Büyük hedefler, güçlü projeler ve dönüşüm yaratma potansiyeliniz var. Yüksek enerjinizi disiplin ve sorumlulukla yapılandırdığınızda kalıcı başarı elde edebilirsiniz.
+W: 
+Değişim, yüksek bilinç ve büyük etki oluşturma enerjiniz güçlü. Yoğun potansiyelinizi dağılma ve umursamazlık yerine bilinçli dönüşüm ve kalıcı üretime yönlendirmelisiniz.
+X: 
+Sıra dışı, keşfedilmemiş ve öngörülmesi zor bir potansiyel taşıyorsunuz. Bilinmeyeni korku ya da dağınıklık yerine araştırma, yenilik ve özgün üretim alanına çevirmelisiniz.
+Y: 
+Ruhsal, sezgisel, araştırmacı ve özgürlüğüne düşkün bir yapınız var. Farklı bilgileri sentezleyebilirsiniz; geçmişte kalmadan bilgeliğinizi bugünün eylemine dönüştürmelisiniz.
+Z: 
+Zeki, disiplinli, akademik ve zirveye çıkmaya odaklısınız. Yönetim ve ara buluculukta güçlüsünüz; seçimlerinizin sonuçlarını bilinçle taşıyıp sağlam düzen kurmanız gerekir.
+Örnek Çıktı
+İsminizin Harf Analizi
+BAŞAK — Harflerin her birinden çıkan okların ucunda B, A, Ş, A ve K harflerinin kısa anlamları gösterilir.
+Başak ismi; sezgisel, koruyucu, bağımsız ve güçlü bir karakter enerjisi taşır. İsminizde iki kez bulunan A harfi liderlik, kararlılık ve kendi yolunuzu çizme isteğini güçlendirir. Ş harfi cesaret ve hareket katarken, K harfi hedeflerinize odaklanma ve insanları yönlendirme becerinizi destekler. Zaman zaman kontrolcü veya fazla ısrarcı olmamaya dikkat etmeniz gerekebilir. Gücünüzü sezgilerinizle birleştirdiğinizde çevrenize güven veren etkili bir yol gösterici olabilirsiniz.
+Bu yorum, isminizdeki harflerin sembolik anlamlarına dayalı kişisel farkındalık içeriğidir.
