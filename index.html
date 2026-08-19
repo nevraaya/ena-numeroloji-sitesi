@@ -306,6 +306,38 @@
   .ha-adimlar{margin-top:18px;text-align:left;max-width:560px;margin-left:auto;margin-right:auto;}
   .ha-adimlar summary{cursor:pointer;font-weight:600;color:var(--brand-text);font-size:.88rem;}
 
+  /* İSMİNİ ANALİZ ET */
+  .ia-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;}
+  @media(max-width:880px){ .ia-grid{grid-template-columns:1fr;gap:32px;} }
+  .ia-portrait{position:relative;}
+  @media(max-width:880px){ .ia-portrait{order:-1;max-width:280px;margin:0 auto;} }
+  .ia-portrait-words{position:absolute;inset:-20px;pointer-events:none;overflow:visible;}
+  .ia-portrait-words span{position:absolute;font-family:'Cinzel',serif;font-weight:700;font-size:3.4rem;color:var(--gold);opacity:.25;}
+  .ia-portrait-words span:nth-child(2){color:var(--coral);opacity:.22;}
+  .ia-portrait-words span:nth-child(3){color:var(--brand);opacity:.2;}
+  @media(max-width:880px){ .ia-portrait-words{display:none;} }
+  .ia-portrait-frame{
+    position:relative;width:100%;max-width:340px;aspect-ratio:3/4;margin:0 auto;border-radius:26px;overflow:hidden;
+    box-shadow:0 26px 50px -18px rgba(123,79,166,.3);border:6px solid var(--card);
+    background:linear-gradient(160deg,var(--brand-soft),var(--gold-soft));
+  }
+  .ia-portrait-frame img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;}
+
+  .ia-sonuc-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:36px 28px;box-shadow:var(--shadow);}
+  .ia-isim-alani{text-align:center;font-family:'Playfair Display',serif;font-weight:700;color:var(--navy);
+    font-size:clamp(2rem,6vw,3.2rem);letter-spacing:.06em;margin:16px 0 28px;position:relative;z-index:2;}
+  .ia-isim-alani .ia-harf{display:inline-block;position:relative;}
+  .ia-isim-alani .ia-harf.tekrar{color:var(--brand);}
+  .ia-svg{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;z-index:1;}
+  .ia-harf-liste{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:14px 24px;z-index:2;}
+  @media(max-width:700px){ .ia-harf-liste{grid-template-columns:1fr;} .ia-svg{display:none;} }
+  .ia-harf-kart{background:var(--paper-alt);border:1px solid var(--line);border-radius:12px;padding:12px 16px;font-size:.86rem;color:var(--ink-soft);}
+  .ia-harf-kart b{color:var(--brand-text);font-family:'Cinzel',serif;margin-right:6px;}
+  .ia-harf-kart .ia-guclenir{display:block;margin-top:4px;font-size:.76rem;color:var(--gold);font-weight:600;}
+  .ia-yorum-blok{margin-top:32px;padding-top:28px;border-top:1px solid var(--line);}
+  .ia-yorum-metin{max-width:620px;margin:0 auto;text-align:center;color:var(--ink-soft);font-size:.98rem;line-height:1.7;}
+  .ia-alt-not{margin-top:18px;text-align:center;font-size:.76rem;color:var(--ink-soft);opacity:.8;}
+
   /* COURSE TEASER CARDS */
   .course-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
   @media(max-width:760px){ .course-grid{grid-template-columns:1fr;} }
@@ -577,6 +609,52 @@
             <button type="button" class="btn btn-ghost" style="margin-top:18px;" onclick="haSifirla()">Başka Bir Tarih Hesapla</button>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- İSMİNİ ANALİZ ET -->
+  <section id="isim-analiz" class="alt">
+    <div class="wrap ia-grid">
+      <div class="ia-text">
+        <span class="eyebrow">Ücretsiz Analiz</span>
+        <h2>İsmini Analiz Et</h2>
+        <p class="lead">İsmindeki harfler sana özel bir karakter hikâyesi anlatır. Sadece adını yaz, her harfin taşıdığı anlamı ve isminin sana anlattığı hikâyeyi keşfet.</p>
+        <div class="calc-form" style="margin-top:8px;">
+          <div class="field">
+            <label for="iaIsim">Adın</label>
+            <input type="text" id="iaIsim" placeholder="İsminizi yazın" autocomplete="off" maxlength="30">
+          </div>
+          <p class="calc-hint" id="iaHata" role="alert" style="display:none;color:var(--coral);font-weight:600;"></p>
+          <button type="button" class="btn btn-gold" onclick="analizEtIsim()">İsmimi Analiz Et</button>
+        </div>
+      </div>
+      <div class="ia-portrait">
+        <div class="ia-portrait-words" aria-hidden="true">
+          <span style="top:6%;left:4%;">A</span>
+          <span style="top:20%;right:6%;">Ş</span>
+          <span style="top:68%;left:2%;">K</span>
+          <span style="top:80%;right:4%;">N</span>
+          <span style="top:44%;left:-2%;">İ</span>
+        </div>
+        <div class="ia-portrait-frame">
+          <img src="assets/nevra-foto.webp" alt="Numeroloji temalı portre" width="978" height="1360">
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap" id="iaSonucWrap" style="display:none;margin-top:40px;">
+      <div class="ia-sonuc-card">
+        <span class="eyebrow" style="text-align:center;display:block;">İsminizin Harf Analizi</span>
+        <div class="ia-isim-alani" id="iaIsimAlani"></div>
+        <svg class="ia-svg" id="iaSvg" aria-hidden="true"></svg>
+        <div class="ia-harf-liste" id="iaHarfListe"></div>
+
+        <div class="ia-yorum-blok">
+          <h3 style="text-align:center;">İsminizin Size Anlattığı Hikâye</h3>
+          <p class="ia-yorum-metin" id="iaYorumMetin"></p>
+        </div>
+        <p class="ia-alt-not">Bu yorum, isminizdeki harflerin sembolik anlamlarına dayalı kişisel farkındalık içeriğidir.</p>
       </div>
     </div>
   </section>
@@ -1366,6 +1444,182 @@
     haGosterHata('');
     document.getElementById('haTarih').focus();
   }
+
+  /* ---------- İSMİNİ ANALİZ ET ---------- */
+  /* Kaynak: CLAUDE_İSİM_HARF_ANALİZİ_VE_PROMPT.docx — yalnızca harflerin sembolik anlamları, sayıya çevrilmez. */
+  const harfVerisi = {
+    A: {ozellik:'başlatan, harekete geçen ve liderlik eden', dikkat:'gücünüzü baskıya dönüştürmeden adil ve dengeli kullanmanız'},
+    B: {ozellik:'sezgisel, koruyucu ve besleyici', dikkat:'kendi ihtiyaçlarınızı unutmamaya ve sınır koymaya dikkat etmeniz'},
+    C: {ozellik:'güçlü iletişim, anlatım ve ikna gücüne sahip', dikkat:'sözlerinizi ölçülü ve yapıcı kullanmanız'},
+    Ç: {ozellik:'hareketli, cesur ve keşfe açık', dikkat:'dürtüsel tepkileri ve ölçüsüz harcamayı bilinçli harekete dönüştürmeniz'},
+    D: {ozellik:'doğuştan gelen belirgin yetenek ve dayanıklılığa sahip', dikkat:'potansiyelinizi disiplinle görünür hâle getirmeniz'},
+    E: {ozellik:'meraklı, özgür, iletişimci ve yüksek enerjili', dikkat:'fazla düşünmek yerine anda kalıp fikirlerinizi uygulamaya geçirmeniz'},
+    F: {ozellik:'sorumluluk sahibi, güvenilir ve fayda üreten', dikkat:'kendinizi feda etmeden sağlıklı sınırlar kurmanız'},
+    G: {ozellik:'derin, seçici ve araştırmacı bir iç dünyaya sahip', dikkat:'şüpheyi azaltıp gizli yeteneklerinizi güvenle ortaya koymanız'},
+    Ğ: {ozellik:'derinleşme, süreklilik ve uzmanlaşma potansiyeli taşıyan', dikkat:'yönünüzü erken netleştirmeniz'},
+    H: {ozellik:'başarı, statü ve yönetim enerjisi güçlü', dikkat:'alma-verme dengesini koruyup gücü paylaşmanız'},
+    I: {ozellik:'şifa, hizmet ve pratik çözüm üretme eğilimi yüksek', dikkat:'bedeninizi, zamanınızı ve sınırlarınızı korumanız'},
+    İ: {ozellik:'hassas, sezgisel, zarif ve yaratıcı', dikkat:'kırılganlığınızı yaratıcı üretime dönüştürmeniz'},
+    J: {ozellik:'vizyoner, kararlı ve yüksek hedeflere açık', dikkat:'geçmişi bırakıp egoyu dengede tutmanız'},
+    K: {ozellik:'kariyer, yükselme ve liderlik potansiyeli güçlü', dikkat:'kontrol etmek yerine kapsayıcı ve bilinçli liderlik kurmanız'},
+    L: {ozellik:'yetenekli, çekici, sosyal ve estetik duyarlılığı yüksek', dikkat:'sanatsal potansiyelinizi disiplinle görünür kılmanız'},
+    M: {ozellik:'çalışkan, pratik ve maddi güvenlik odaklı', dikkat:'güven ihtiyacını kontrolcülüğe dönüştürmeden esnek kalmanız'},
+    N: {ozellik:'empatik, koruyucu, verici ve anaç', dikkat:'özgürlük ve hizmet arasında denge kurmanız'},
+    O: {ozellik:'ticaret, otorite ve kaynak büyütme potansiyeli yüksek', dikkat:'kontrolü bırakmayı ve duygularınızı ifade etmeyi öğrenmeniz'},
+    Ö: {ozellik:'gizemli, gözlemci, sabırlı ve derin düşünen', dikkat:'iç dünyanızı suskunluğa değil açık ifadeye dönüştürmeniz'},
+    P: {ozellik:'analitik, stratejik ve öğretici bir zihne sahip', dikkat:'düşünceleri somut projelere dönüştürmeniz'},
+    Q: {ozellik:'ticaret, statü ve organizasyon enerjisi güçlü', dikkat:'para ve kontrolü etik ve dengeyle birleştirmeniz'},
+    R: {ozellik:'cesur, saygın, koruyucu ve krizde liderlik eden', dikkat:'kararsızlık yerine net seçimler yapmanız'},
+    S: {ozellik:'yaratıcı, girişimci ve görünür olmaya yatkın', dikkat:'başarıyı sevgiyle dengeleyip geçmişi bırakmanız'},
+    Ş: {ozellik:'yoğun, cesur, hareketli ve yaratıcı', dikkat:'dürtüsel öfkeyi bilinçli harekete yönlendirmeniz'},
+    T: {ozellik:'bilge, gözlemci ve birleştirici', dikkat:'bilgiyi paylaşmanız ve kontrolü sezgisel güvenle dengelemeniz'},
+    U: {ozellik:'para, bilgi ve deneyim biriktirme kapasitesi güçlü', dikkat:'biriktirdiklerinizi sağlıklı biçimde dolaşıma sokmanız'},
+    Ü: {ozellik:'yaratıcı, üretken ve zengin hayal gücüne sahip', dikkat:'düşünceleri somut projelere ve üretime dönüştürmeniz'},
+    V: {ozellik:'büyük hedefler ve dönüşüm yaratma potansiyeli taşıyan', dikkat:'enerjinizi disiplin ve sorumlulukla yapılandırmanız'},
+    W: {ozellik:'değişim ve yüksek bilinç oluşturma enerjisi güçlü', dikkat:'potansiyelinizi bilinçli dönüşüme yönlendirmeniz'},
+    X: {ozellik:'sıra dışı ve keşfedilmemiş bir potansiyel taşıyan', dikkat:'bilinmeyeni araştırma ve özgün üretim alanına çevirmeniz'},
+    Y: {ozellik:'ruhsal, sezgisel, araştırmacı ve özgürlüğüne düşkün', dikkat:'bilgeliğinizi bugünün eylemine dönüştürmeniz'},
+    Z: {ozellik:'zeki, disiplinli ve zirveye odaklı', dikkat:'seçimlerinizin sonuçlarını bilinçle taşımanız'}
+  };
+
+  function iaBuyukHarf(str){
+    return str
+      .replace(/i/g, 'İ').replace(/ı/g, 'I').replace(/ş/g, 'Ş')
+      .replace(/ğ/g, 'Ğ').replace(/ü/g, 'Ü').replace(/ö/g, 'Ö').replace(/ç/g, 'Ç')
+      .toUpperCase();
+  }
+
+  function iaHataGoster(msg){
+    const el = document.getElementById('iaHata');
+    el.textContent = msg;
+    el.style.display = msg ? 'block' : 'none';
+  }
+
+  document.getElementById('iaIsim').addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){ e.preventDefault(); analizEtIsim(); }
+  });
+
+  function analizEtIsim(){
+    iaHataGoster('');
+    const ham = document.getElementById('iaIsim').value.trim();
+    if(!ham){ iaHataGoster('Lütfen geçerli bir isim yazın.'); document.getElementById('iaSonucWrap').style.display='none'; return; }
+    const buyuk = iaBuyukHarf(ham);
+    const harfler = buyuk.split('').filter(function(ch){ return harfVerisi.hasOwnProperty(ch); });
+    if(harfler.length === 0){ iaHataGoster('Lütfen geçerli bir isim yazın.'); document.getElementById('iaSonucWrap').style.display='none'; return; }
+
+    // İsim alanı: her harf ayrı span
+    const isimAlani = document.getElementById('iaIsimAlani');
+    isimAlani.innerHTML = '';
+    const sayac = {};
+    harfler.forEach(function(ch){ sayac[ch] = (sayac[ch]||0) + 1; });
+    const gorulen = {};
+    const spanlar = [];
+    buyuk.split('').forEach(function(ch){
+      const span = document.createElement('span');
+      if(harfVerisi.hasOwnProperty(ch)){
+        span.className = 'ia-harf' + (sayac[ch] > 1 ? ' tekrar' : '');
+        span.textContent = ch;
+        spanlar.push(span);
+      } else {
+        span.textContent = ch === ' ' ? ' ' : ch;
+      }
+      isimAlani.appendChild(span);
+    });
+
+    // Harf kartları (sırayla, tekrarlar ayrı ayrı)
+    const liste = document.getElementById('iaHarfListe');
+    liste.innerHTML = '';
+    const kartlar = [];
+    harfler.forEach(function(ch, i){
+      gorulen[ch] = (gorulen[ch]||0) + 1;
+      const kart = document.createElement('div');
+      kart.className = 'ia-harf-kart';
+      kart.innerHTML = '<b>' + ch + ' —</b>' + harfVerisi[ch].ozellik.charAt(0).toUpperCase() + harfVerisi[ch].ozellik.slice(1) + '.' +
+        (gorulen[ch] > 1 ? '<span class="ia-guclenir">Bu özellik isminizde güçleniyor.</span>' : '');
+      liste.appendChild(kart);
+      kartlar.push(kart);
+    });
+
+    document.getElementById('iaSonucWrap').style.display = 'block';
+
+    // Bağlantı çizgilerini çiz (masaüstü)
+    requestAnimationFrame(function(){ iaCizgiCiz(spanlar, kartlar); });
+
+    // Toplu yorum oluştur
+    document.getElementById('iaYorumMetin').textContent = iaYorumOlustur(ham, harfler, sayac);
+
+    document.getElementById('iaSonucWrap').scrollIntoView({behavior:'smooth', block:'start'});
+  }
+
+  function iaCizgiCiz(spanlar, kartlar){
+    const svg = document.getElementById('iaSvg');
+    if(window.innerWidth <= 700 || spanlar.length === 0){ svg.innerHTML=''; return; }
+    const card = document.querySelector('.ia-sonuc-card');
+    const cardRect = card.getBoundingClientRect();
+    svg.setAttribute('width', cardRect.width);
+    svg.setAttribute('height', cardRect.height);
+    svg.innerHTML = '';
+    const n = Math.min(spanlar.length, kartlar.length);
+    for(let i=0;i<n;i++){
+      const a = spanlar[i].getBoundingClientRect();
+      const b = kartlar[i].getBoundingClientRect();
+      const x1 = a.left + a.width/2 - cardRect.left;
+      const y1 = a.bottom - cardRect.top;
+      const x2 = b.left + (i % 2 === 0 ? b.width - 14 : 14) - cardRect.left;
+      const y2 = b.top - cardRect.top;
+      const path = document.createElementNS('http://www.w3.org/2000/svg','path');
+      const midY = y1 + (y2-y1)*0.5;
+      path.setAttribute('d', 'M'+x1+','+y1+' C '+x1+','+midY+' '+x2+','+midY+' '+x2+','+y2);
+      path.setAttribute('stroke', 'var(--gold)');
+      path.setAttribute('stroke-width', '1.5');
+      path.setAttribute('fill', 'none');
+      path.setAttribute('opacity', '.55');
+      svg.appendChild(path);
+    }
+  }
+
+  function iaYorumOlustur(isim, harfler, sayac){
+    const uniq = [];
+    harfler.forEach(function(ch){ if(uniq.indexOf(ch) === -1) uniq.push(ch); });
+    const ilkHarf = uniq[0];
+    const sonHarf = uniq[uniq.length - 1];
+    const tekrarlar = uniq.filter(function(ch){ return sayac[ch] > 1; });
+
+    const isimGosterim = isim.charAt(0).toUpperCase() + isim.slice(1);
+    const parcalar = [];
+
+    const ilkUc = uniq.slice(0, Math.min(3, uniq.length));
+    if(ilkUc.length === 1){
+      parcalar.push(isimGosterim + ' ismi; ' + harfVerisi[ilkUc[0]].ozellik + ' bir karakter enerjisi taşır.');
+    } else {
+      const ozellikler = ilkUc.map(function(ch){ return harfVerisi[ch].ozellik; });
+      const son = ozellikler.pop();
+      parcalar.push(isimGosterim + ' ismi; ' + ozellikler.join(', ') + ' ve ' + son + ' bir karakter enerjisi taşır.');
+    }
+
+    if(tekrarlar.length > 0){
+      const t = tekrarlar[0];
+      parcalar.push('İsminizde ' + sayac[t] + ' kez bulunan ' + t + ' harfi, ' + harfVerisi[t].ozellik + ' etkisini güçlendirir.');
+    }
+
+    if(sonHarf !== ilkHarf && ilkUc.indexOf(sonHarf) === -1){
+      parcalar.push(sonHarf + ' harfi ise ' + harfVerisi[sonHarf].ozellik + ' özelliğini tamamlayıcı biçimde katar.');
+    }
+
+    parcalar.push('Zaman zaman ' + harfVerisi[ilkHarf].dikkat + ' size iyi gelebilir.');
+    parcalar.push('Bu özelliklerinizi bilinçli biçimde kullandığınızda çevrenize güven veren, ilham dolu bir enerji yayabilirsiniz.');
+
+    return parcalar.join(' ');
+  }
+
+  window.addEventListener('resize', function(){
+    const wrap = document.getElementById('iaSonucWrap');
+    if(wrap && wrap.style.display !== 'none'){
+      const spanlar = Array.from(document.querySelectorAll('#iaIsimAlani .ia-harf'));
+      const kartlar = Array.from(document.querySelectorAll('.ia-harf-kart'));
+      iaCizgiCiz(spanlar, kartlar);
+    }
+  });
 </script>
 
 </body>
