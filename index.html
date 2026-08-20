@@ -632,6 +632,7 @@
 
         <div id="haSonuc" style="display:none;margin-top:32px;">
           <div class="ha-result-card">
+            <img id="haGorsel" src="" alt="" loading="lazy" style="width:120px;height:120px;object-fit:cover;border-radius:16px;box-shadow:var(--shadow);margin:0 auto 14px;display:block;">
             <span class="eyebrow-mini">Hayat Amacınız Sayınız</span>
             <div class="num-big" id="haSayi">–</div>
             <h3 id="haUnvan"></h3>
@@ -1489,6 +1490,8 @@
 
     const bilgi = hayatAmaclari[sonuc];
     document.getElementById('haSayi').textContent = sonuc;
+    document.getElementById('haGorsel').src = 'assets/hayat-amaci/' + sonuc + '.jpg';
+    document.getElementById('haGorsel').alt = 'Hayat Amacı ' + sonuc + ' — ' + bilgi.unvan;
     document.getElementById('haUnvan').textContent = sonuc + ' — ' + bilgi.unvan;
     const ul = document.getElementById('haMaddeler');
     ul.innerHTML = '';
