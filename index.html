@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <!--
   ═══════════════════════════════════════════════════════════════════════
-  NOT: "https://example.com" bu dosyada PLACEHOLDER olarak kullanılmıştır.
-  Site canlıya alınmadan önce gerçek alan adınızla değiştirin.
-  Eğitim kartları artık kendi /egitimler/<slug>/ sayfalarına bağlanıyor.
+  NOT: Canonical/OG/JSON-LD alan adı olarak şu anki canlı adres kullanılıyor:
+  https://ena-numeroloji-sitesi.vercel.app
+  Özel bir alan adı (domain) satın alındığında bu dosyada VE egitimler/*/index.html
+  içindeki tüm "https://ena-numeroloji-sitesi.vercel.app" geçişlerini yeni
+  alan adınızla değiştirin (find & replace yeterli, yapı aynı kalır).
   ═══════════════════════════════════════════════════════════════════════
 -->
 <html lang="tr">
@@ -15,7 +17,7 @@
 <meta name="robots" content="index, follow">
 <meta http-equiv="content-language" content="tr-TR">
 <meta name="author" content="Emine Nevra Aya">
-<link rel="canonical" href="https://example.com/">
+<link rel="canonical" href="https://ena-numeroloji-sitesi.vercel.app/">
 <link rel="icon" href="assets/logo-transparent.png?v=2" type="image/png">
 
 <meta property="og:type" content="website">
@@ -23,9 +25,12 @@
 <meta property="og:locale" content="tr_TR">
 <meta property="og:title" content="Emine Nevra Aya | Türkiye Uluslararası Numeroloji Okulu">
 <meta property="og:description" content="Günlük, aylık ve yıllık enerjini hemen hesapla; numeroloji eğitimlerini keşfet.">
-<meta property="og:url" content="https://example.com/">
-<meta property="og:image" content="https://example.com/assets/nevra-foto.webp">
+<meta property="og:url" content="https://ena-numeroloji-sitesi.vercel.app/">
+<meta property="og:image" content="https://ena-numeroloji-sitesi.vercel.app/assets/nevra-foto.webp">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Emine Nevra Aya | Türkiye Uluslararası Numeroloji Okulu">
+<meta name="twitter:description" content="Günlük, aylık ve yıllık enerjini hemen hesapla; numeroloji eğitimlerini keşfet.">
+<meta name="twitter:image" content="https://ena-numeroloji-sitesi.vercel.app/assets/nevra-foto.webp">
 
 <script>
   (function(){
@@ -43,22 +48,32 @@
   "@graph": [
     {
       "@type": "EducationalOrganization",
-      "@id": "https://example.com/#organization",
+      "@id": "https://ena-numeroloji-sitesi.vercel.app/#organization",
       "name": "Türkiye Uluslararası Numeroloji Okulu",
-      "url": "https://example.com/",
-      "logo": "https://example.com/assets/logo-transparent.png?v=2",
-      "founder": { "@id": "https://example.com/#person-emine-nevra-aya" },
+      "url": "https://ena-numeroloji-sitesi.vercel.app/",
+      "logo": "https://ena-numeroloji-sitesi.vercel.app/assets/logo-transparent.png?v=2",
+      "founder": { "@id": "https://ena-numeroloji-sitesi.vercel.app/#person-emine-nevra-aya" },
       "areaServed": "TR",
-      "knowsLanguage": "tr"
+      "knowsLanguage": "tr",
+      "sameAs": [
+        "https://www.instagram.com/nevrahaniminnumerolojisi338/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "telephone": "+971-50-775-6360",
+        "url": "https://wa.me/971507756360",
+        "availableLanguage": ["tr"]
+      }
     },
     {
       "@type": "Person",
-      "@id": "https://example.com/#person-emine-nevra-aya",
+      "@id": "https://ena-numeroloji-sitesi.vercel.app/#person-emine-nevra-aya",
       "name": "Emine Nevra Aya",
-      "image": "https://example.com/assets/nevra-foto.webp",
+      "image": "https://ena-numeroloji-sitesi.vercel.app/assets/nevra-foto.webp",
       "jobTitle": "Türkiye Uluslararası Numeroloji Okulu — Kurucu",
       "description": "Uzun yıllar bankacılık sektöründe kurumsal iletişim yöneticisi olarak görev yaptıktan sonra numeroloji ve sayı temelli analiz sistemlerine yönelmiş; numeroloji alanında danışmanlık ve uygulamalı eğitim çalışmaları yürütmektedir.",
-      "worksFor": { "@id": "https://example.com/#organization" }
+      "worksFor": { "@id": "https://ena-numeroloji-sitesi.vercel.app/#organization" }
     }
   ]
 }
@@ -908,6 +923,7 @@
         <h2>Yolculuğuna Bugün Başla</h2>
         <p>Sayılarının sana anlattığı hikayeyi öğrenmek ya da eğitimlerimiz hakkında bilgi almak için bize ulaş.</p>
         <a class="btn btn-ghost" href="https://wa.me/971507756360">WhatsApp ile Yaz</a>
+        <p style="margin:14px 0 0;font-size:.85rem;color:rgba(255,255,255,.85);">WhatsApp: <a href="https://wa.me/971507756360" style="color:#fff;font-weight:600;">+971 50 775 6360</a></p>
       </div>
     </div>
   </section>
@@ -916,8 +932,9 @@
 
 <footer>
   <div class="wrap" style="display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center;">
-    <img src="assets/logo-transparent.png?v=2" alt="" style="height:104px;width:auto;">
+    <img src="assets/logo-transparent.png?v=2" alt="Emine Nevra Aya — Türkiye Uluslararası Numeroloji Okulu logosu" style="height:104px;width:auto;">
     <p style="max-width:560px;font-size:.8rem;color:var(--ink-soft);margin:0;">Bu sitedeki numeroloji analizleri kişisel farkındalık ve eğitim amaçlıdır. Tıbbi, psikolojik, hukuki veya finansal danışmanlık yerine geçmez.</p>
+    <p style="font-size:.8rem;color:var(--ink-soft);margin:0;">WhatsApp: <a href="https://wa.me/971507756360" style="color:var(--brand-text);font-weight:600;">+971 50 775 6360</a> · Instagram: <a href="https://www.instagram.com/nevrahaniminnumerolojisi338/" target="_blank" rel="noopener" style="color:var(--brand-text);font-weight:600;">@nevrahaniminnumerolojisi338</a></p>
     <nav style="display:flex;flex-wrap:wrap;gap:6px 16px;justify-content:center;font-size:.8rem;">
       <a href="#hakkinda">Hakkımızda</a>
       <a href="#instagram">Instagram</a>

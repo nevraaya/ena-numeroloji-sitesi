@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ena-numeroloji-sitesi.vercel.app/sitemap.xml
