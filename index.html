@@ -534,7 +534,8 @@
       <div class="section-head">
         <span class="eyebrow">Hemen Deneyin</span>
         <h2>Günlük · Aylık · Yıllık Enerjini Hesapla</h2>
-        <p class="lead">Doğum tarihini ve bakmak istediğin tarihi gir; sayının karşılığı olan arketipi ve kısa yorumunu hemen gör. Detaylı analiz için 22'lik Numeroloji eğitim sayfasına yönlendireceğiz.</p>
+        <p class="lead">Doğum tarihini ve bakmak istediğin tarihi gir; sayının karşılığı olan arketipi ve kısa yorumunu hemen gör.</p>
+        <a class="btn btn-ghost" href="egitimler/22lik-numeroloji/" style="margin-top:4px;">Detaylı Analiz İçin 22'lik Numeroloji Eğitimine Git</a>
       </div>
 
       <div class="calc-form">
@@ -584,6 +585,7 @@
 
         <div id="calcSonuc" aria-live="polite">
           <div class="sonuc-head">
+            <img id="sonucTarot" class="tarot-mini" alt="" loading="lazy" style="width:64px;border-radius:8px;box-shadow:0 8px 18px -8px rgba(0,0,0,.35);flex:none;">
             <div class="badge-num" id="sonucBadge">1</div>
             <div>
               <span class="no" id="sonucNo">Arketip 1</span>
@@ -1028,6 +1030,8 @@
     box.style.setProperty("--h", hue(d.no));
     document.getElementById("sonucBadge").textContent = d.no;
     document.getElementById("sonucBadge").style.background = "hsl(" + hue(d.no) + " 55% 42%)";
+    document.getElementById("sonucTarot").src = "assets/tarot/" + d.no + ".jpg";
+    document.getElementById("sonucTarot").alt = riderWaite[d.no-1] || d.ad;
     document.getElementById("sonucNo").textContent = "Arketip " + d.no;
     document.getElementById("sonucAd").textContent = d.ad;
     document.getElementById("sonucKarakter").textContent = d.karakter;
