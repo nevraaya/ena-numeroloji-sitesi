@@ -1,0 +1,9 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+
+# Local tooling (not part of this static site's deploy)
+node_modules/
+.env
+.env.*
